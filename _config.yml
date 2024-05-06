@@ -22,7 +22,7 @@ title: 'Estádisticas de uso'
 description: 'Your awesome description'
 
 baseurl: '' # the subpath of your site, e.g. /blog
-absoluteurl: ''
+absoluteurl: 'https://lareferencia.github.io/usage-stats-docs/'
 url: '' # the base hostname & protocol for your site, e.g. http://example.com
 
 email:  youremail@email.com
