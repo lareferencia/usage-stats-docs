@@ -22,7 +22,7 @@ Essentially, it involves processing information from user interactions across va
   
 <br>
 
-![image tooltip here](/assets/img/usage-stats-flow.png)
+![]({{"/assets/img/usage-stats-flow.png" | relative_url }} )
 
 
 <!--more-->
