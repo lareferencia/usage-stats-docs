@@ -30,6 +30,7 @@ Nuestro flujo consta de tres etapas:
 
 <br>
 
+
 ## **Recolección de la información**
 
 En esta etapa recolectamos los datos utilizando DSpace stats collector, Vufind y Vufind con Matomo. esta recolección de datos se realiza a nivel de repositorio, Nodo nacional y en LA Referencia. Esta información "en crudo" necesita pasar por un proceso de filtrado y normalización.
