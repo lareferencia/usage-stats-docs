@@ -23,7 +23,7 @@ Nuestro flujo consta de tres etapas:
 <br>
 
 
-![]({{"/assets/img/usage-stats-flow.png" | relative_url }} )
+![]({{"/assets/img/usage-stats-flow.png" | absolute_url }} )
 
 
 <!--more-->
