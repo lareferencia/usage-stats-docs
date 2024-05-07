@@ -39,7 +39,7 @@
         | where: 'language_reference', site.fallback_page
         | where: 'language', language[1].slug %}
       {%- for navigation_page in navigation_pages %}
-        {%- assign url = site.baseurl | append: navigation_page.url %}
+        {%- assign url =  navigation_page.url %}
       {%- endfor %}
     {%- endif %}
     <a class="nav-item" href="{{site.baseurl}}{{ url }}">

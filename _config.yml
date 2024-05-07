@@ -19,6 +19,8 @@
 # in the templates via {{ site.myvariable }}.
 
 title: 'Estádisticas de uso'
+title_en: 'Usage stats'
+tite_pt: 'Estatísticas de uso'
 description: 'Your awesome description'
 
 baseurl: '/usage-stats-docs' # the subpath of your site, e.g. /blog

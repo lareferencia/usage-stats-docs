@@ -6,7 +6,7 @@ date:   2023-06-30 14:53:14 +0200
 description: "Tercer post en Español"
 
 language: es
-language_reference: repository-widget
+language_reference: widget-repository
 
 categories: post
 

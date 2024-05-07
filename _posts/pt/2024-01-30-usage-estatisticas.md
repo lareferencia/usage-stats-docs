@@ -6,7 +6,7 @@ date:   2023-05-30 14:53:14 +0200
 description: "Segunda postagem em Português"
 
 language: pt
-language_reference: second_post
+language_reference: usage-stats-post
 
 categories: post
 

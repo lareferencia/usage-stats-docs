@@ -20,7 +20,7 @@ El widgets para items esta desarrollado con el objetivo de ser incrustrado en la
 <div class="flex">
 
   <div>
-    <img style="width: 850px" src="/assets/img/widget-items.png">   
+    <img style="width: 850px" src="{{site.baseurl}}/assets/img/widget-items.png">   
   </div>
 
   <div style="padding: 2rem">
@@ -61,7 +61,7 @@ El widgets para items esta desarrollado con el objetivo de ser incrustrado en la
 
 
 <div>
-    <img style="width: 700px" src="/assets/img/widget-explanation.png">   
+    <img style="width: 700px" src="{{site.baseurl}}/assets/img/widget-explanation.png">   
 </div>
 
 <!-- <div class="flex" style="align-items: center">
