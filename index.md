@@ -12,8 +12,8 @@ language_reference: index
 <ul class="post-item-list">
   {% for post in posts %}
     <li class="post-item">
-        <a class="post-item-title" href="{{ post.url }}">{{ post.title }}</a>
-      {{ post.excerpt }} <a class="post-item-excerpt" href="{{ post.url }}">read more</a>
+        <a class="post-item-title" href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>
+      {{ post.excerpt }} <a class="post-item-excerpt" href="{{site.baseurl}}{{ post.url }}">read more</a>
     </li>
   {% endfor %}
 </ul>

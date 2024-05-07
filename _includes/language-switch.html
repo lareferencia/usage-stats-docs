@@ -42,7 +42,7 @@
         {%- assign url = site.baseurl | append: navigation_page.url %}
       {%- endfor %}
     {%- endif %}
-    <a class="nav-item" href="{{ url }}">
+    <a class="nav-item" href="{{site.baseurl}}{{ url }}">
       {{ language[1].value }}
     </a>
   {%- endif %}
