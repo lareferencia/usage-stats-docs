@@ -1,16 +1,27 @@
 <header class="site-header">
 
   <div class="wrapper">
+    <a class="site-title nav-item" 
+      href="{% if page.language == "es" %}
+        {{ "/es/home" | relative_url }}
+      {% elsif page.language == "pt" %}
+        {{ "/pt/home" | relative_url }}
+      {% else %}
+        {{ "/en/home" | relative_url }}
+      {% endif %}">
 
-    {%- if page.language == "es" %}
-    <a class="site-title nav-item" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-    
-    {%- else %}
-    <a class="site-title nav-item" href="{{ "/" | relative_url }}">{{ site.title_en | escape }}</a>
-    {%-endif %}
+      {% if page.language == "es" %}
+        {{ site.title | escape }}
+      {% elsif page.language == "pt" %}
+        {{ site.title_pt | escape }}
+      {% else %}
+        {{ site.title_en | escape }}
+      {% endif %}
+
+    </a>
     <nav class="site-nav">
       {% include navigation.html %}
     </nav>
-
   </div>
+
 </header>

@@ -20,8 +20,9 @@
 
 title: 'Estádisticas de uso'
 title_en: 'Usage stats'
-tite_pt: 'Estatísticas de uso'
-description: 'Your awesome description'
+title_pt: 'Estatísticas de uso'
+
+description: 'Recoleccion, procesamiento y visualización de estadísticas de uso de repositorios'
 
 baseurl: '/usage-stats-docs' # the subpath of your site, e.g. /blog
 absolute_url: 'https://lareferencia.github.io/usage-stats-docs/en'

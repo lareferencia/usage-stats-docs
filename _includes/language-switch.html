@@ -6,14 +6,14 @@
         | where: 'language', language[1].slug %}
       {%- if navigation_pages.size == 1 %}
         {%- for navigation_page in navigation_pages %}
-          {%- assign url = site.baseurl | append: navigation_page.url %}
+          {%- assign url = navigation_page.url %}
         {%- endfor %}
       {%- else %}
         {%- assign navigation_pages = site.pages
           | where: 'language_reference', site.fallback_page
           | where: 'language', language[1].slug %}
         {%- for navigation_page in navigation_pages %}
-          {%- assign url = site.baseurl | append: navigation_page.url %}
+          {%- assign url = navigation_page.url %}
         {%- endfor %}
       {%- endif %}
 
@@ -30,7 +30,7 @@
           | where: 'language_reference', site.fallback_page
           | where: 'language', language[1].slug %}
         {%- for navigation_page in navigation_pages %}
-          {%- assign url = site.baseurl | append: navigation_page.url %}
+          {%- assign url =  navigation_page.url %}
         {%- endfor %}
       {%- endif %}
 

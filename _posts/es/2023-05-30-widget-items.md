@@ -2,7 +2,7 @@
 layout: post
 
 title: "Widget para items"
-date: 2023-01-30 14:53:14 +0200
+date: 2023-05-30 14:53:14 +0200
 description: "Segundo post en Español"
 
 language: es
