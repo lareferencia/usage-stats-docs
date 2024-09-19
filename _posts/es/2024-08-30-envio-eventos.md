@@ -23,7 +23,7 @@ DSpace es un software de repositorios ampliamente utilizado. Este componente pyt
 
 ![]({{"/assets/img/dcollector-pipeline.png" | absolute_url }} )
 
-Acceso al código y manuales de instalación
+**Acceso al código y manuales de instalación**
 
 [https://github.com/lareferencia/dspace-stats-collector](https://github.com/lareferencia/dspace-stats-collector)
   
@@ -33,7 +33,7 @@ Acceso al código y manuales de instalación
 
 Para los agregadores utilizando el software vufind [https://vufind.org](https://vufind.org) existe un plugin que envía los eventos en tiempo real utilizando el protocolo tracker Matomo 
 
-Acceso al código y manuales de instalación
+**Acceso al código y manuales de instalación**
 
 [https://vufind.org/wiki/configuration:usage_stats](https://vufind.org/wiki/configuration:usage_stats)
 
@@ -43,7 +43,7 @@ Acceso al código y manuales de instalación
 
 Para los repositorios Eprints existe un plugin implementado por OpenAIRE que envía los eventos utilizando el protocolo tracker Matomo
 
-Acceso al código y manuales de instalación
+**Acceso al código y manuales de instalación**
 
 [https://github.com/openaire/EPrints-OAPiwik](https://github.com/openaire/EPrints-OAPiwik)
 

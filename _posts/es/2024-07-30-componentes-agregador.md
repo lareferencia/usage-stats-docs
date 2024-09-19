@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title:  "Componentes del agregación, procesamiento y almacenaniento"
+title:  "Infraestructura de Estadísticas de Uso LA Referencia"
 date:   2024-07-30 14:53:14 +0200
 description: ""
 language: es
@@ -11,125 +11,133 @@ categories: post
 
 published: true
 ---
+
+<br/>
+
+El sistema de estadísticas LA Referencia funciona en una infraestructura común en Amazon AWS, mantenida como parte de los servicios que LA Referencia brinda gracias a los aportes de los países miembro y los aportes SCOSS. 
+
+La infraestructura está basada en un conjunto de componentes abiertos publicados en Github como parte del compromiso de contribuir al Ecosistema Global de Ciencia Abierta.
+
+<br/>
+
+- **Componentes de base de datos de fuentes, administración y librerías de normalización**
+- **Componentes de almacenamiento y preservación de eventos**
+- **Componentes de procesamiento, limpieza, normalización y agregación de eventos** 
+- **Componentes de servicios web para repositorios y agregadores**
+
+<br/>
+
+Ingresando aquí podrá acceder a todo el código fuente de los componentes
 <!--more-->
 
-
+<br/>
 
 ## **Componentes de base de datos de fuentes, administración y librerías de normalización**
 
+<br/>
+
 ### Usage Statitics Service DB 
+
+<br/>
+
+![]({{"/assets/img/database.png" | absolute_url }} )
+
+<br/>
+
+**Acceso al código y manuales de instalación**
+
+[https://github.com/lareferencia/lareferencia-usage-stats-db](https://github.com/lareferencia/lareferencia-usage-stats-db)
+
+<br/>
+
+
 ### Sistema de administración y orquestación 
 
-En esta etapa recolectamos los datos utilizando DSpace stats collector, Vufind y Vufind con Matomo. esta recolección de datos se realiza a nivel de repositorio, Nodo nacional y en LA Referencia. Esta información "en crudo" necesita pasar por un proceso de filtrado y normalización.
-<br>
+<br/>
 
-## **Componente de preservación de eventos**
+![]({{"/assets/img/admin.png" | absolute_url }} )
 
-### AWS S3 Storage
+<br/>
 
-### Matomo to S3 
+**Acceso al código y manuales de instalación**
 
-<br>
+[https://github.com/lareferencia/lareferencia-usage-stats-admin](https://github.com/lareferencia/lareferencia-usage-stats-admin)
+
+<br/>
+
+## **Componente de almacenamieno y preservación de eventos**
+
+### AWS S3 Storage y Matomo to S3
+
+<br/>
+
+![]({{"/assets/img/s3.png" | absolute_url }} )
+
+<br/>
+
+**Acceso al código y manuales de instalación**
+
+[https://github.com/lareferencia/lareferencia-usage-stats-processor](https://github.com/lareferencia/lareferencia-usage-stats-processor)
+
+<br/>
+
 
 ## **Componente de procesamiento, limpieza, normalización y agregación de eventos** 
 
+Software de procesamiento desarrollado en Python con el objetivo de filtrar y normalizar la información almacenada en S3 Parquet que luego es persitida en índices Elastic/OpenSearch
+
+<br/>
+
+**Carga de archivos Parquet desde Amazon S3**  
+Esta etapa se encarga de cargar archivos Parquet desde un repositorio específico en una fecha determinada. Durante este proceso, se extraen los datos de sesión del usuario y los eventos asociados a esa sesión.
+
+**Filtro de robots**  
+El propósito de esta etapa es mejorar la fiabilidad de los datos estadísticos. El filtro permite identificar y eliminar las sesiones y eventos generados por robots, asegurando que solo se analicen datos auténticos.
+
+**Filtro de assets**  
+Similar a la etapa anterior, esta fase busca continuar mejorando la calidad de los datos estadísticos. Aquí se detectan y eliminan eventos erróneos, como las "descargas" de miniaturas (thumbnails), cuando el recolector de estadísticas registra de manera incorrecta la visualización de una miniatura como una descarga.
+
+**Cálculo de métricas**  
+En esta etapa, se calculan las visitas, descargas y enlaces asociados a una sesión específica y su identificador (identifier). Además, se introduce una nueva métrica llamada "conversiones", que se basa en combinaciones de vistas con descargas o vistas con enlaces.
+
+**Agregación de datos**  
+Esta fase realiza la agregación de datos por ítem (identifier), calculando las vistas, descargas, enlaces y conversiones de un ítem, independientemente de las sesiones que lo consultaron. También se agregan estos datos segmentados por el país de origen del evento.
+
+**Normalización de identificadores**  
+El objetivo de esta etapa es homogeneizar y estandarizar los identificadores (identifiers) provenientes de los repositorios, mejorando la consistencia de los datos.
+
+**Indexación en ElasticSearch/OpenSearch**  
+En esta etapa final, se realizan los últimos ajustes en el flujo de datos para asegurar una indexación eficaz y eficiente en OpenSearch o ElasticSearch.
+
+<br/>
+
+![]({{"/assets/img/pipeline.png" | absolute_url }} )
+
+<br/>
+
 ### S3 to Elastic/OpenSearch Pipeline
 
-En esta etapa recolectamos los datos utilizando DSpace stats collector, Vufind y Vufind con Matomo. esta recolección de datos se realiza a nivel de repositorio, Nodo nacional y en LA Referencia. Esta información "en crudo" necesita pasar por un proceso de filtrado y normalización.
-<br>
+**Acceso al código y manuales de instalación**
+
+[https://github.com/lareferencia/lareferencia-usage-stats-processor](https://github.com/lareferencia/lareferencia-usage-stats-processor)
+
+<br/>
+
 
 ## **Componente de servicios web para repositorios y agregadores**
 
+<br/>
+
+![]({{"/assets/img/webservices.png" | absolute_url }} )
+
+<br/>
+
 ### Usage Statitics Web Services
 
-En esta etapa recolectamos los datos utilizando DSpace stats collector, Vufind y Vufind con Matomo. esta recolección de datos se realiza a nivel de repositorio, Nodo nacional y en LA Referencia. Esta información "en crudo" necesita pasar por un proceso de filtrado y normalización.
-<br>
+**Acceso al código y manuales de instalación**
 
-
-Arquitectura desarrollada en Python con el objetivo de filtrar y normalizar la información recolectada en la etapa anterior (Etapa de recolección de datos).
+[https://github.com/lareferencia/lareferencia-usage-services](https://github.com/lareferencia/lareferencia-usage-stats-services)
 
 <br/>
 
-<div class="flex" style="gap: 2rem">
-    <div>
-        <img style="width: 100vw" src="{{ site.baseurl}}/assets/img/pipeline.png"/>
-    </div>
-    <div>
-        <h3 class="active">
-            ¿Qué es la arquitectura pipeline?
-        </h3>
-        <p>
-            Esta arquitectura representa una tuberia por donde la informacion fluye para obtener un producto final filtrado y pulido. Consta de una serie de etapas definidas con un objetivo unico y particular.
-        </p>
-        <span style="font-weight: bold">Información relevante</span>
-        <ul>
-          <li>Tecnologias utilizadas</li>
-          <ul>
-            <li>Python</li>
-            <li>Pandas</li>
-            <li>AWS (S3)</li>
-          </ul>
-          <li>Código fuente y documentación</li>
-          <ul>
-            <li>
-              <a href="www.github.com/jon-doe">
-                www.github.com/jon-doe
-              </a>
-            </li>
-          </ul>
-        </ul>
-    </div>
-</div>
 
-<div class="post-item"></div>
-
-<h3 class="active">
-    Input stage
-</h3>
-Carga de archivos parquet de Amazon S3. Esta etapa permite cargar los archivos parquet de un repositorio especifico en una fecha especifica. Se obtienen los datos de sesión del usuario y los eventos asociados a esa sesión.
-
-<br/>
-
-<h3 class="active">
-    Filtro de robots
-</h3>
-El objetivo de esta etapa es mejorar la fiabilidad de los datos estadísticos, para ello, el filtro permite detectar y eliminar datos de sesiones y/o eventos producidos por robots.
-
-<br/>
-
-<h3 class="active">
-    Filtro de assets
-</h3>
-Al igual que la estapa anterior, el objetivo es seguir mejorando la fiabilidad de los datos estadísticos, para ello, este filtro detecta y elimina eventos producidos de manera erronea, por ejemplo "descargas" de thumbnails, es decir cuando el encargado de recolectar las estadisticas deteca la acción de "ver" un thumbnail como una descarga.
-
-<br/>
-
-<h3 class="active">
-    Cálculo de métricas
-</h3>
-El objetivo de esta estapa son, por un lado calular la suma de visitas, descargas y enlaces para una sesión asociada a un identifier, y por el otro calcular una nueva métrica llamada conversiones, basada en vistas y descargas o vistas y enlaces. 
-
-<br/>
-
-<h3 class="active">
-    Agregación de datos
-</h3>
-Esta estapa se encarga de realizar, por un lado la agregacion por item, es decir calcular vistas, descargas, enlaces y conversiones del item (identifier) independienteme de las sesiones que lo hayan consultado, por otro lado, en esta estapa se calculan las vistas, descargas, enlaces y conversiones de un item segmentada por el pasi de origen del evento. 
-
-<br/>
-
-<h3 class="active"> 
-    Normalización de identifiers
-</h3>
-El objetivo de esta etapa es modificar o normalizar los identifiers provenientes de los repositorios para obtener una homogeneidad y estandarización. de los datos.
-
-
-<br/>
-
-<h3 class="active">
-    Output stage
-</h3>
-Esta etapa final se encarga de hacer las ultimas modificaciones en el flujo de datos para lograr indexar de forma eficas y eficiente los datos en Open Search (Elastic Search.)
-
-
-<br/>
