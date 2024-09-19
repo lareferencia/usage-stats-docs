@@ -18,7 +18,7 @@ language_reference: index
 {% assign posts=site.posts | sort | where: "language", page.language %}
 
 <ul class="post-item-list">
-  {% for post in posts %}
+  {% for post in posts reversed %}
     <li class="post-item">
         <a class="post-item-title" href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>
       {{ post.excerpt }} <a class="post-item-excerpt" href="{{site.baseurl}}{{ post.url }}">read more</a>

@@ -24,8 +24,8 @@ title_pt: 'Estatísticas de uso - LA Referencia'
 
 description: 'Agregador regional de estadísticas de uso de LA Referencia'
 
-baseurl: '/' # the subpath of your site, e.g. /blog
-absolute_url: 'https://ustats.lareferencia.info'
+baseurl: '' # the subpath of your site, e.g. /blog
+absolute_url: 'https://ustats.lareferencia.info/'
 url: '' # the base hostname & protocol for your site, e.g. http://example.com
 
 email:  soporte@lareferencia.redclara.net

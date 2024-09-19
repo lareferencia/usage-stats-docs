@@ -13,9 +13,18 @@ categories: post
 published: true
 ---
 
-En esta etapa recolectamos los datos utilizando DSpace stats collector, Vufind y Vufind con Matomo. esta recolección de datos se realiza a nivel de repositorio, Nodo nacional y en LA Referencia. Esta información "en crudo" necesita pasar por un proceso de filtrado y normalización.
+Los eventos de uso ocurren en los repositorios y agregadores donde los resultados de investigación son visibilizados, por esa razón para poder preservarlos, procesarlos y generar servicios es necesario contar con componentes instalados en las fuentes que remitan periódicamente los eventos de uso. 
 
 ### DSpace Stats Collector 
+
+DSpace es un software de repositorios ampliamente utilizado. Este componente python, que funciona en forma indendiente y segura, envía los eventos de uso almacenados en  DSpace (4,5,6,7) utilizando el protocolo de tracker Matomo.
+
+![]({{"/assets/img/dcollector-diagram.png" | absolute_url }} )
+
+Acceso al código y manuales de instalación
+
+[https://github.com/lareferencia/dspace-stats-collector](https://github.com/lareferencia/dspace-stats-collector)
+ 
 
 ### Plugin Vufind Matomo
 
