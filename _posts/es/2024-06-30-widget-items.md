@@ -1,9 +1,9 @@
 ---
 layout: post
 
-title: "Widget para items"
-date: 2023-05-30 14:53:14 +0200
-description: "Segundo post en Español"
+title: "Sobre el Widget de items"
+date: 2024-06-30 14:53:14 +0200
+description: ""
 
 language: es
 language_reference: widget-items
@@ -13,9 +13,8 @@ categories: post
 published: true
 ---
 
-El widgets para items esta desarrollado con el objetivo de ser incrustrado en la página del item en los portales de búsqueda y exhibir las estadisticas de dicho item.
+El widget para items esta desarrollado con el objetivo de ser incrustrado en la página del item en  repositorios y portales de búsqueda para reportar las métricas de un ítem particular.
 
-<!--more-->
 
 <div class="flex">
 
@@ -49,6 +48,7 @@ El widgets para items esta desarrollado con el objetivo de ser incrustrado en la
 
 </div>
 
+<!--more-->
 <br>
 
 <div style="border-bottom: 1px solid #eee;"></div>

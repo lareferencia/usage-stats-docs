@@ -18,21 +18,21 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 'Estádisticas de uso'
-title_en: 'Usage stats'
-title_pt: 'Estatísticas de uso'
+title: 'Estádisticas de uso - LA Referencia'
+title_en: 'Usage stats - LA Referencia'
+title_pt: 'Estatísticas de uso - LA Referencia'
 
-description: 'Recoleccion, procesamiento y visualización de estadísticas de uso de repositorios'
+description: 'Agregador regional de estadísticas de uso de LA Referencia'
 
-baseurl: '/usage-stats-docs' # the subpath of your site, e.g. /blog
-absolute_url: 'https://lareferencia.github.io/usage-stats-docs/en'
+baseurl: '/' # the subpath of your site, e.g. /blog
+absolute_url: 'https://ustats.lareferencia.info'
 url: '' # the base hostname & protocol for your site, e.g. http://example.com
 
-email:  youremail@email.com
-twitter_username: 'twitter'
-github_username: 'github' 
+email:  soporte@lareferencia.redclara.net
+twitter_username: 'LAReferenciaAA'
+github_username: 'lareferencia'  
 
-default_language: 'en'
+default_language: 'es'
 fallback_page: 'home'
 
 # Build settings

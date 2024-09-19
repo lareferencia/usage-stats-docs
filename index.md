@@ -1,7 +1,7 @@
 ---
 layout: home
 
-language: en
+language: es
 language_reference: index
 ---
 <div class="flex" style=" padding-top:3rem; padding-bottom:3rem; justify-content: center">
@@ -15,7 +15,7 @@ language_reference: index
 
 <div class="post-item"></div>
 
-{% assign posts=site.posts | where: "language", page.language %}
+{% assign posts=site.posts | sort | where: "language", page.language %}
 
 <ul class="post-item-list">
   {% for post in posts %}

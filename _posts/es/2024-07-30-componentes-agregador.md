@@ -1,19 +1,52 @@
 ---
 layout: post
 
-title:  "Arquitectura pipeline"
-date:   2023-06-30 14:53:14 +0200
-description: "Tercer post en Español"
-
+title:  "Componentes del agregación, procesamiento y almacenaniento"
+date:   2024-07-30 14:53:14 +0200
+description: ""
 language: es
-language_reference: pipeline-architecture
+language_reference: usage-stats-post
 
 categories: post
 
 published: true
 ---
-Arquitectura desarrollada en Python con el objetivo de filtrar y normalizar la información recolectada en la etapa anterior (Etapa de recolección de datos).
 <!--more-->
+
+
+
+## **Componentes de base de datos de fuentes, administración y librerías de normalización**
+
+### Usage Statitics Service DB 
+### Sistema de administración y orquestación 
+
+En esta etapa recolectamos los datos utilizando DSpace stats collector, Vufind y Vufind con Matomo. esta recolección de datos se realiza a nivel de repositorio, Nodo nacional y en LA Referencia. Esta información "en crudo" necesita pasar por un proceso de filtrado y normalización.
+<br>
+
+## **Componente de preservación de eventos**
+
+### AWS S3 Storage
+
+### Matomo to S3 
+
+<br>
+
+## **Componente de procesamiento, limpieza, normalización y agregación de eventos** 
+
+### S3 to Elastic/OpenSearch Pipeline
+
+En esta etapa recolectamos los datos utilizando DSpace stats collector, Vufind y Vufind con Matomo. esta recolección de datos se realiza a nivel de repositorio, Nodo nacional y en LA Referencia. Esta información "en crudo" necesita pasar por un proceso de filtrado y normalización.
+<br>
+
+## **Componente de servicios web para repositorios y agregadores**
+
+### Usage Statitics Web Services
+
+En esta etapa recolectamos los datos utilizando DSpace stats collector, Vufind y Vufind con Matomo. esta recolección de datos se realiza a nivel de repositorio, Nodo nacional y en LA Referencia. Esta información "en crudo" necesita pasar por un proceso de filtrado y normalización.
+<br>
+
+
+Arquitectura desarrollada en Python con el objetivo de filtrar y normalizar la información recolectada en la etapa anterior (Etapa de recolección de datos).
 
 <br/>
 
@@ -48,8 +81,6 @@ Arquitectura desarrollada en Python con el objetivo de filtrar y normalizar la i
     </div>
 </div>
 
-
-
 <div class="post-item"></div>
 
 <h3 class="active">
@@ -76,7 +107,7 @@ Al igual que la estapa anterior, el objetivo es seguir mejorando la fiabilidad d
 <h3 class="active">
     Cálculo de métricas
 </h3>
-El objetivo de esta estapa son, por un lado calular la suma de visitas, descargas y enlaces para una sesión asociada a un identifier, y por el otro calcular una nueva métrica llamada conversiones, basada en vistas y descargas o vistas y enlaces. ([Ver más sobre conversiones]({% link _posts/es/2023-06-30-arquitectura-pipeline.md %}))
+El objetivo de esta estapa son, por un lado calular la suma de visitas, descargas y enlaces para una sesión asociada a un identifier, y por el otro calcular una nueva métrica llamada conversiones, basada en vistas y descargas o vistas y enlaces. 
 
 <br/>
 

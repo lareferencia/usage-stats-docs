@@ -11,67 +11,19 @@ published: true
 order: 4
 ---
 
-# **Frontend**
+### **[Lautaro Matas](mailto:lautaro.matas@lareferencia.redclara.net)**  
+ 
+Coordinación general, Arquitectura, Desarrollo de software e Infraestructura
 
-<ul>
-    <li>
-     Jon Doe
-    </li>
-    <ul>
-        <li>
-            jondoe@gmail.com
-        </li>
-        <li>
-            <a href="www.github.com/jon-doe">
-                Github
-            </a>
-        </li>
-    </ul>
-    <li>
-     Jon Doe
-    </li>
-    <ul>
-        <li>
-            jondoe@gmail.com
-        </li>
-        <li>
-            <a href="www.github.com/jon-doe">
-                Github
-            </a>
-        </li>
-    </ul>
-</ul>
+<br/>
 
-# **Backend**
+###  **[Guillermo Murillo](mailto:soporte@lareferencia.redclara.net)**
+Gestión del sistema y soporte técnico a nodos 
 
-<ul>
-    <li>
-     Jon Doe
-    </li>
-    <ul>
-        <li>
-            jondoe@gmail.com
-        </li>
-        <li>
-            <a href="www.github.com/jon-doe">
-                Github
-            </a>
-        </li>
-    </ul>
-    <li>
-     Jon Doe
-    </li>
-    <ul>
-        <li>
-            jondoe@gmail.com
-        </li>
-        <li>
-            <a href="www.github.com/jon-doe">
-                Github
-            </a>
-        </li>
-    </ul>
-</ul>
+<br/>
+
+###  **Juan Manitta**: 
+Desarrollo UI/UX y Visualización – Desarrollo Pipeline de procesamiento
 
 
 
