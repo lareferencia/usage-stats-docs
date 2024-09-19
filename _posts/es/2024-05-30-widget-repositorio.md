@@ -1,9 +1,9 @@
 ---
 layout: post
 
-title:  "Widget para repositorios"
+title:  "Componente de visualización de estadísticas históricas agregadas"
 date:   2024-05-30 14:53:14 +0200
-description: "Tercer post en Español"
+description: ""
 
 language: es
 language_reference: widget-repository
@@ -13,6 +13,7 @@ categories: post
 published: true
 ---
 
+<br/>
 
 <div class="flex">
 
@@ -22,25 +23,26 @@ published: true
 
   <div style="padding: 2rem">
     <p>
-      Este widget esta desarrollado con Typescript, React y empaquetado con ESbuild, a su vez es agnostico por lo cual puede ser incrustrado en cualquier ecosistema web.
+      Este componente visual tiene como objetivo presentar las estadísticas de uso a nivel de repositorio, agregador nacional y agregador regional agregadas para una fuente determinada. 
+      Es mantenido en forma centralizada en un CDN y puede ser incrustrado en repositorios y portales.
+      Para poder instalarlo es necesario coordinar con el nodo nacional LA Referencia correspondiente para asegurar la presencia de evento. 
     </p>
-    <span style="font-weight: bold">Informacion relevante</span>
-    <ul>
-      <li>Tecnologias utilizadas</li>
-      <ul>
-        <li>Typescript</li>
-        <li>React.js</li>
-        <li>Apache Echarts</li>
-        <li>ESbuild</li>
-      </ul>
-      <li>Código fuente y documentación</li>
-      <ul>
+   <br/>
+    <ul>  
         <li>
-          <a href="www.github.com/jon-doe">
-            www.github.com/jon-doe
+          <b>Código fuente:</b> 
+          <a href="https://github.com/lareferencia/lareferencia-stats-repository-widget">
+           https://github.com/lareferencia/lareferencia-stats-repository-widget
           </a>
         </li>
-      </ul>
+    </ul>
+    <ul>  
+        <li>
+          <b>Documentación de instalación:</b>
+          <a href="https://github.com/lareferencia/lrhw">
+            https://github.com/lareferencia/lrhw
+          </a>
+        </li>
     </ul>
   </div>
 
@@ -49,6 +51,7 @@ published: true
 <br>
 
 <!--more-->
+
 <div style="border-bottom: 1px solid #eee;"></div>
 
 <br>
