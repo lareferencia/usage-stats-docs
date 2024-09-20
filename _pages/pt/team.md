@@ -1,25 +1,30 @@
 ---
+
 layout: page
 
-title: Equipe
+title: Equipe  
 description: Equipe
 
-language: pt
+language: pt  
 language_reference: team
 
-published: true
+published: true  
 order: 4
+
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+### **[Lautaro Matas](mailto:lautaro.matas@lareferencia.redclara.net)**  
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Coordenação Geral, Arquitetura, Desenvolvimento de Software e Infraestrutura
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+<br/>
 
+### **[Guillermo Murillo](mailto:soporte@lareferencia.redclara.net)**  
+Gestão do Sistema e Suporte Técnico para Nodos
 
-[jekyll-organization]: https://github.com/jekyll
+<br/>
+
+### **Juan Manitta**:  
+Desenvolvimento de UI/UX e Visualização – Desenvolvimento de Pipeline de Processamento
+
+--- 

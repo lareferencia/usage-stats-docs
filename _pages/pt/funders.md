@@ -11,15 +11,6 @@ published: true
 order: 2
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+O projeto de estatísticas de uso faz parte do desenvolvimento contínuo da equipe da LA Referencia, que é sustentada pelas contribuições dos países membros da América Latina e da Espanha. Graças à colaboração e ao compromisso dessas nações, a LA Referencia continua fortalecendo e expandindo seus serviços em apoio à ciência aberta.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+Durante o ciclo 2023-2024, o desenvolvimento do nosso sistema de estatísticas de uso foi impulsionado pelas contribuições recebidas por meio da Global Sustainability Coalition for Open Science Services (SCOSS). A SCOSS é uma coalizão internacional criada em 2017 que identifica e apoia infraestruturas essenciais para a ciência aberta, especialmente serviços não comerciais que necessitam de um apoio financeiro mais sólido. Por meio de um modelo de financiamento colaborativo, a SCOSS permite que instituições em todo o mundo invistam diretamente na sustentabilidade dessas infraestruturas críticas, garantindo sua viabilidade e crescimento a longo prazo.
