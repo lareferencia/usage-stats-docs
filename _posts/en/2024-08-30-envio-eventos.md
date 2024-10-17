@@ -33,6 +33,9 @@ DSpace is widely used repository software. This Python component, which operates
 [Actualización](https://github.com/lareferencia/dspace-stats-collector/blob/master/UPDATE.md)
 [Desinstalación](https://github.com/lareferencia/dspace-stats-collector/blob/master/UNINSTALL.md)
 
+[Exportador de eventos antiguos (beta)](https://github.com/lareferencia/dspace-stats-collector/blob/master/EXPORT.md)
+
+
 <br/>
 
 ### **Vufind Aggregators**

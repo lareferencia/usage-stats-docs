@@ -28,6 +28,12 @@ DSpace é um software de repositórios amplamente utilizado. Este componente em 
 **Acesso ao código e manuais de instalação**
 
 [https://github.com/lareferencia/dspace-stats-collector](https://github.com/lareferencia/dspace-stats-collector)
+
+[Instalación](https://github.com/lareferencia/dspace-stats-collector/blob/master/README.md)
+[Actualización](https://github.com/lareferencia/dspace-stats-collector/blob/master/UPDATE.md)
+[Desinstalación](https://github.com/lareferencia/dspace-stats-collector/blob/master/UNINSTALL.md)
+
+[Exportador de eventos antiguos (beta)](https://github.com/lareferencia/dspace-stats-collector/blob/master/EXPORT.md)
   
 <br/>
 
