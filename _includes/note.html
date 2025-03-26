@@ -1,0 +1,52 @@
+<div class="note-container">
+    <div class="note-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="8" x2="12" y2="12"></line>
+            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+        </svg>
+    </div>
+    <div class="note-content">
+        {{ include.content }}
+    </div>
+</div>
+
+<style>
+    .note-container {
+        background-color: #f8f9fa;
+        border-left: 4px solid #8A3691;
+        padding: 15px 20px;
+        margin: 25px 0;
+        border-radius: 4px;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .note-icon {
+        color: #8A3691;
+        margin-right: 15px;
+        flex-shrink: 0;
+        margin-top: 2px;
+    }
+
+    .note-content {
+        flex: 1;
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .note-content p:last-child {
+        margin-bottom: 0;
+    }
+
+    /* Estilo para dispositivos móviles */
+    @media (max-width: 600px) {
+        .note-container {
+            padding: 12px 15px;
+        }
+        
+        .note-icon {
+            margin-right: 12px;
+        }
+    }
+</style>

@@ -1,22 +1,26 @@
 ---
 layout: home
 
-title: Página inicial
-description: Página inicial
+title: "Home"
+description: Home
 
 language: pt
 language_reference: home
+
 ---
 
-![]({{"/assets/img/logo.png" | relative_url }} )
+<div class="post-item"></div>
 
-{% assign posts=site.posts | where: "language", page.language %}
+{% assign posts=site.posts | where: "language", page.language | sort: 'title' | reverse %}
 
 <ul class="post-item-list">
+
   {% for post in posts %}
     <li class="post-item">
-        <a class="post-item-title" href="{{ post.url }}">{{ post.title }}</a>
-      {{ post.excerpt }} <a class="post-item-excerpt" href="{{ post.url }}">read more</a>
+        <a class="post-item-title" href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>
+        <br/>
+        <br/>
+      {{ post.excerpt }} <a class="post-item-excerpt" href="{{site.baseurl}}{{ post.url }}">more</a>
     </li>
   {% endfor %}
 </ul>

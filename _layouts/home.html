@@ -1,4 +1,30 @@
 ---
 layout: default
 ---
-{{ content }}
+<div class="home">
+  <section class="hero my-8 text-center">
+
+    <div class="flex" style=" padding-top:3rem; padding-bottom:3rem; justify-content: center">
+      <img 
+        src="{{ site.baseurl }}/assets/img/logo.png"
+      />
+    </div>
+    <!-- <img src="{{ "/assets/img/logo.png" | relative_url }}" alt="dARK Logo" class="hero-logo"> -->
+    <h1>
+      {% if page.language == "es" %}
+        {{ site.title | escape }}
+      {% elsif page.language == "pt" %}
+        {{ site.title_pt | escape }}
+      {% else %}
+        {{ site.title_en | escape }}
+      {% endif %}
+    </h1>
+    <p class="lead">
+      {{ site.description }}
+    </p>
+  </section>
+
+  <section class="content my-8">
+    {{ content }}
+  </section>
+</div>

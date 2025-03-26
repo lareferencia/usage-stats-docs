@@ -1,49 +1,16 @@
-{%- for language in snippets.languages %}
-  {%- if language[1].slug != page.language %}
-    {%- if page.layout == 'page' %}
-      {%- assign navigation_pages = site.pages
-        | where: 'language_reference', page.language_reference
-        | where: 'language', language[1].slug %}
-      {%- if navigation_pages.size == 1 %}
-        {%- for navigation_page in navigation_pages %}
-          {%- assign url = navigation_page.url %}
-        {%- endfor %}
-      {%- else %}
-        {%- assign navigation_pages = site.pages
-          | where: 'language_reference', site.fallback_page
-          | where: 'language', language[1].slug %}
-        {%- for navigation_page in navigation_pages %}
-          {%- assign url = navigation_page.url %}
-        {%- endfor %}
-      {%- endif %}
+<div class="language-switch">
+  {% assign current_path = page.url | remove_first: "/en/" | remove_first: "/es/" | remove_first: "/pt/" %}
 
-    {%- elsif page.layout == 'post' %}
-      {%- assign navigation_posts = site.posts
-        | where: 'language_reference', page.language_reference
-        | where: 'language', language[1].slug %}
-      {%- if navigation_posts.size == 1 %}
-        {%- for navigation_post in navigation_posts %}
-          {%- assign url = navigation_post.url %}
-        {%- endfor %}
-      {%- else %}
-        {%- assign navigation_pages = site.pages
-          | where: 'language_reference', site.fallback_page
-          | where: 'language', language[1].slug %}
-        {%- for navigation_page in navigation_pages %}
-          {%- assign url =  navigation_page.url %}
-        {%- endfor %}
-      {%- endif %}
-
-    {%- else %}
-      {%- assign navigation_pages = site.pages
-        | where: 'language_reference', site.fallback_page
-        | where: 'language', language[1].slug %}
-      {%- for navigation_page in navigation_pages %}
-        {%- assign url =  navigation_page.url %}
-      {%- endfor %}
-    {%- endif %}
-    <a class="nav-item" href="{{site.baseurl}}{{ url }}">
-      {{ language[1].value }}
-    </a>
-  {%- endif %}
-{%- endfor %}
+  {% if current_path == "" or current_path == "/" %}
+  {% assign current_path = "home" %}
+  {% endif %}
+  
+  <a class="lang-link {% if page.language == 'en' %}active{% endif %}" 
+     href="{{ '/en/' | append: current_path | relative_url }}">EN</a>
+     
+  <a class="lang-link {% if page.language == 'es' %}active{% endif %}" 
+     href="{{ '/es/' | append: current_path | relative_url }}">ES</a>
+     
+  <a class="lang-link {% if page.language == 'pt' %}active{% endif %}" 
+     href="{{ '/pt/' | append: current_path | relative_url }}">PT</a>
+</div>

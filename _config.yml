@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 'Estádisticas de uso - LA Referencia'
+title: 'Estadísticas de uso - LA Referencia'
 title_en: 'Usage stats - LA Referencia'
 title_pt: 'Estatísticas de uso - LA Referencia'
 
