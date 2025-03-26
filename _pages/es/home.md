@@ -11,7 +11,7 @@ language_reference: home
 
 <div class="post-item"></div>
 
-{% assign posts=site.posts | where: "language", page.language | sort: 'title' | reverse %}
+{% assign posts=site.posts | where: "language", page.language | sort: 'title' %}
 
 <ul class="post-item-list">
 

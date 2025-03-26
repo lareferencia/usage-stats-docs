@@ -2,7 +2,7 @@
 
 layout: post
 
-title: "Aggregated Historical Statistics Visualization Component"  
+title: "05. Aggregated Historical Statistics Visualization Component"  
 date: 2024-05-30 14:53:14 +0200  
 description: ""
 

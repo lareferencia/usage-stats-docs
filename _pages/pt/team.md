@@ -9,22 +9,46 @@ language: pt
 language_reference: team
 
 published: true  
-order: 4
+order: 1
 
 ---
 
-### **[Lautaro Matas](mailto:lautaro.matas@lareferencia.redclara.net)**  
+<h1 class="team-title">Equipe</h1>
 
-Coordenação Geral, Arquitetura, Desenvolvimento de Software e Infraestrutura
+<p class="team-intro">
+  Nossa equipe é responsável pela coordenação, desenvolvimento e suporte do sistema.
+</p>
 
-<br/>
+<div class="team-grid">
+  <div class="team-member">
+    <div class="team-member-header">
+      <h3>Lautaro Matas</h3>
+      <span class="team-member-role">Coordenação Geral, Arquitetura, Desenvolvimento de Software e Infraestrutura</span>
+    </div>
+    <div class="team-member-org">LA Referencia</div>
+    <div class="team-member-contact">
+      <a href="mailto:lautaro.matas@lareferencia.redclara.net" class="team-email">lautaro.matas@lareferencia.redclara.net</a>
+    </div>
+  </div>
 
-### **[Guillermo Murillo](mailto:soporte@lareferencia.redclara.net)**  
-Gestão do Sistema e Suporte Técnico para Nodos
+  <div class="team-member">
+    <div class="team-member-header">
+      <h3>Guillermo Murillo</h3>
+      <span class="team-member-role">Gerenciamento de Sistema e Suporte Técnico para os Nós</span>
+    </div>
+    <div class="team-member-org">LA Referencia</div>
+    <div class="team-member-contact">
+      <a href="mailto:soporte@lareferencia.redclara.net" class="team-email">soporte@lareferencia.redclara.net</a>
+    </div>
+  </div>
 
-<br/>
+  <div class="team-member">
+    <div class="team-member-header">
+      <h3>Juan Manitta</h3>
+      <span class="team-member-role">Desenvolvimento de UI/UX e Visualização – Desenvolvimento de Pipeline de Processamento</span>
+    </div>
+    <div class="team-member-org">LA Referencia</div>
+  </div>
+</div>
 
-### **Juan Manitta**:  
-Desenvolvimento de UI/UX e Visualização – Desenvolvimento de Pipeline de Processamento
-
---- 
+---

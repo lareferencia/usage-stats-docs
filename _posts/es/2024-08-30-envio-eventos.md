@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title:  "Componentes de envío de eventos"
+title:  "02. Componentes de envío de eventos"
 date:   2024-08-30 14:53:14 +0200
 description: "Componentes de envío de eventos"
 

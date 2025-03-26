@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: "Componente de visualización de estadísticas por ítem"
+title: "04. Componente de visualización de estadísticas por ítem"
 date: 2024-06-30 14:53:14 +0200
 description: ""
 

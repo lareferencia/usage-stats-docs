@@ -4,9 +4,9 @@
 
 <title>
   {% if page.title %}
-    {{ page.title | escape }}
+    {{ page.title_es | escape }}
   {% elsif page.language == "es" %}
-    {{ site.title | escape }}
+    {{ site.title_es | escape }}
   {% elsif page.language == "pt" %}
     {{ site.title_pt | escape }}
   {% else %}

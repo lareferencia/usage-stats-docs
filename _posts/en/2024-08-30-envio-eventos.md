@@ -2,7 +2,7 @@
 
 layout: post
 
-title:  "Event Sending Components"  
+title:  "02. Event Sending Components"  
 date:   2024-08-30 14:53:14 +0200  
 description: "Event Sending Components"
 

@@ -18,11 +18,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 'Estadísticas de uso - LA Referencia'
-title_en: 'Usage stats - LA Referencia'
+title_es: 'Estadísticas de uso - LA Referencia'
+title_en: 'Usage statistics - LA Referencia'
 title_pt: 'Estatísticas de uso - LA Referencia'
 
-description: 'Agregador regional de estadísticas de uso de LA Referencia'
+description_es: 'Agregador regional de estadísticas de uso de LA Referencia'
+description_en: 'Regional aggregator of usage statistics for LA Referencia'
+description_pt: 'Agregador regional de estatísticas de uso da LA Referencia'
 
 baseurl: '' # the subpath of your site, e.g. /blog
 absolute_url: 'https://ustats.lareferencia.info/'

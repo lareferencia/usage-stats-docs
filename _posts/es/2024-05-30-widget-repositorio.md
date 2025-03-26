@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title:  "Componente de visualización de estadísticas históricas agregadas"
+title:  "05. Componente de visualización de estadísticas históricas agregadas"
 date:   2024-05-30 14:53:14 +0200
 description: ""
 

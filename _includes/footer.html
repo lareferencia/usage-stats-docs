@@ -5,7 +5,7 @@
         <div class="footer-branding">
           <div class="footer-title">
             {% if page.language == "es" %}
-              {{ site.title | escape }}
+              {{ site.title_es | escape }}
             {% elsif page.language == "pt" %}
               {{ site.title_pt | escape }}
             {% else %}
@@ -14,7 +14,13 @@
           </div>
         </div>
         <p class="footer-tagline">
-          {{ site.description | escape }}
+          {% if page.language == "es" %}
+            {{ site.description_es | escape }}
+          {% elsif page.language == "pt" %}
+            {{ site.description_pt | escape }}
+          {% else %}
+            {{ site.description_en | escape }}
+          {% endif %}
         </p>
       </div>
       

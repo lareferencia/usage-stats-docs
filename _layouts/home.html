@@ -12,15 +12,21 @@ layout: default
     <!-- <img src="{{ "/assets/img/logo.png" | relative_url }}" alt="dARK Logo" class="hero-logo"> -->
     <h1>
       {% if page.language == "es" %}
-        {{ site.title | escape }}
+      {{ site.title_es | escape }}
       {% elsif page.language == "pt" %}
-        {{ site.title_pt | escape }}
+      {{ site.title_pt | escape }}
       {% else %}
-        {{ site.title_en | escape }}
+      {{ site.title_en | escape }}
       {% endif %}
     </h1>
     <p class="lead">
-      {{ site.description }}
+      {% if page.language == "es" %}
+      {{ site.description_es }}
+      {% elsif page.language == "pt" %}
+      {{ site.description_pt }}
+      {% else %}
+      {{ site.description_en }}
+      {% endif %}
     </p>
   </section>
 

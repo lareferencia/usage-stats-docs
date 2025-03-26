@@ -2,7 +2,7 @@
 
 layout: post
 
-title: "Item-Level Statistics Visualization Component"  
+title: "04. Item-Level Statistics Visualization Component"  
 date: 2024-06-30 14:53:14 +0200  
 description: ""
 
