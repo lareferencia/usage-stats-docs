@@ -2,35 +2,49 @@
 layout: default
 ---
 <div class="home">
-  <section class="hero my-8 text-center">
-
-    <div class="flex" style=" padding-top:3rem; padding-bottom:3rem; justify-content: center">
-      <img 
-        src="{{ site.baseurl }}/assets/img/logo.png"
-      />
+  <section class="hero-banner">
+    <div class="hero-content">
+      <div class="hero-image">
+        <img src="{{ site.baseurl }}/assets/img/logo.png" alt="Logo" class="hero-logo">
+      </div>
+      
+      <h1 class="hero-title">
+        {% if page.language == "es" %}
+        {{ site.title_es | escape }}
+        {% elsif page.language == "pt" %}
+        {{ site.title_pt | escape }}
+        {% else %}
+        {{ site.title_en | escape }}
+        {% endif %}
+      </h1>
+      
+      <p class="hero-description">
+        {% if page.language == "es" %}
+        {{ site.description_es }}
+        {% elsif page.language == "pt" %}
+        {{ site.description_pt }}
+        {% else %}
+        {{ site.description_en }}
+        {% endif %}
+      </p>
+      
+      <div class="hero-actions">
+        <a href="#content" class="btn btn-primary btn-lg">
+          {% if page.language == "es" %}Empezar a leer{% elsif page.language == "pt" %}Começar a ler{% else %}Start reading{% endif %}
+        </a>
+      </div>
     </div>
-    <!-- <img src="{{ "/assets/img/logo.png" | relative_url }}" alt="dARK Logo" class="hero-logo"> -->
-    <h1>
-      {% if page.language == "es" %}
-      {{ site.title_es | escape }}
-      {% elsif page.language == "pt" %}
-      {{ site.title_pt | escape }}
-      {% else %}
-      {{ site.title_en | escape }}
-      {% endif %}
-    </h1>
-    <p class="lead">
-      {% if page.language == "es" %}
-      {{ site.description_es }}
-      {% elsif page.language == "pt" %}
-      {{ site.description_pt }}
-      {% else %}
-      {{ site.description_en }}
-      {% endif %}
-    </p>
+    
+    <div class="hero-wave">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200">
+        <path fill="#ffffff" fill-opacity="1" d="M0,96L48,106.7C96,117,192,139,288,138.7C384,139,480,117,576,96C672,75,768,53,864,64C960,75,1056,117,1152,133.3C1248,149,1344,139,1392,133.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+      </svg>
+    </div>
   </section>
 
-  <section class="content my-8">
-    {{ content }}
+  <section id="content" class="content-section">
+    <div class="container">
+      {{ content }}
+    </div>
   </section>
 </div>

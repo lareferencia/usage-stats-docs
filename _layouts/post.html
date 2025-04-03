@@ -2,10 +2,35 @@
 layout: default
 ---
 
-<article id="post">
+<article class="post">
     <header class="post-header">
         <h1 class="post-title">{{ page.title }}</h1>
+        {% if page.description %}
+        <p class="post-description">{{ page.description }}</p>
+        {% endif %}
     </header>
-    <br/>
-    {{ content }}
+    
+    <div class="post-content">
+        {{ content }}
+    </div>
+    
+    <footer class="post-footer">
+        <div class="post-navigation">
+            <div class="post-navigation-links">
+                {% if page.previous and page.previous.language == page.language %}
+                <a href="{{ page.previous.url | relative_url }}" class="post-nav-link post-nav-prev">
+                    <span class="post-nav-label">{% if page.language == "es" %}Anterior{% elsif page.language == "pt" %}Anterior{% else %}Previous{% endif %}</span>
+                    <span class="post-nav-title">{{ page.previous.title }}</span>
+                </a>
+                {% endif %}
+                
+                {% if page.next and page.next.language == page.language %}
+                <a href="{{ page.next.url | relative_url }}" class="post-nav-link post-nav-next">
+                    <span class="post-nav-label">{% if page.language == "es" %}Siguiente{% elsif page.language == "pt" %}Próximo{% else %}Next{% endif %}</span>
+                    <span class="post-nav-title">{{ page.next.title }}</span>
+                </a>
+                {% endif %}
+            </div>
+        </div>
+    </footer>
 </article>
